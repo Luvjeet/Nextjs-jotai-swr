@@ -1,10 +1,10 @@
 "use client";
 import { useAtom } from "jotai";
-import { countryAtom } from "../../../store/countryAtom";
-
+import { getCountryData } from "@/store/countryAtom";
 
 export default function() {
-    const coutry = useAtom(countryAtom);
+    const [coutry] = useAtom(getCountryData);
+
     return (
         <>
             <h2>Peru ka data</h2>
